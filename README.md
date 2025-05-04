@@ -37,19 +37,60 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
 ![Low-level Architecture Diagram](https://github.com/nartov-k/etl-youtube/tree/main/architecture/low-level_architecture.jpg)
 ![Low-level Architecture Diagram](https://raw.githubusercontent.com/nartov-k/etl-youtube/main/architecture/low-level_architecture.jpg)
 
- 
+## Implementation Steps
+
+1. **Data Collection**:
+   - Fetch data from the YouTube API (JSON/CSV formats).
+   - Store raw data in an S3 bucket.
+   
+2. **Data Transformation**:
+   - Convert JSON/CSV files to Parquet format using Lambda functions.
+   - Update data types for compatibility and optimize data storage.
+
+3. **ETL Pipeline**:
+   - Create a data catalog in AWS Glue.
+   - Join datasets and partition data for efficient querying.
+
+4. **Querying**:
+   - Use AWS Athena to run SQL queries on the transformed data.
+   
+5. **Visualization**:
+   - Connect Athena to QuickSight for dashboard development.
+   - Visualize trends, engagement metrics, and ad placement insights.
 
 ## Features
 
 - Automated extraction and transformation of YouTube ad performance data
 - Serverless ETL pipeline on AWS for scalability
-- Interactive dashboard with key KPIs like impressions, engagement, and cost metrics
+- Interactive dashboard with key KPIs like Top viewed categories (e.g., "Entertainment," "Music"), Engagement rates, Best-performing ad placement categories and Cost metrics
 - Designed for marketing teams to identify high-ROI ad opportunities
 
 ## Impact
 
-- Replaces manual spreadsheet tracking with automated data flows  
 - Improves decision-making for ad spend and targeting  
 - Serves as a real-world demonstration of cloud-based analytics at scale
+
+### Dashboard
+![Dashboard 1](https://github.com/nartov-k/etl-youtube/tree/main/dashboard/frontend1.png)
+![Dashboard 1](https://raw.githubusercontent.com/nartov-k/etl-youtube/main/dashboard/frontend1.png)
+![Dashboard 2](https://github.com/nartov-k/etl-youtube/tree/main/dashboard/frontend2.png)
+![Dashboard 2](https://raw.githubusercontent.com/nartov-k/etl-youtube/main/dashboard/frontend2.png)
+
+## Challenges
+
+- API Rate: limited ability to update large datasets efficiently.
+- Lambda Configuration:
+    - Created manual Lambda layers for Python 3.8 compatibility.
+    - Resolved issues related to data type mismatches.
+- Query Optimization: Managed data partitioning for efficient querying.
+- Dataset Updates**: Limited updates to top 500 rows due to time and cost constraints.
+
+---
+
+## Links and References
+
+- [AWS Doc](https://aws.amazon.com/documentation/)
+- [YT API Doc](https://developers.google.com/youtube/v3/getting-started)
+- [Dashboard (Requires Account)](https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/4e5f0d59-4fa3-430e-9c9b-9e1da61a0ea1)
 
 
