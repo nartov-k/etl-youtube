@@ -32,7 +32,7 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
     - ***Python 3.8*** - For Lambda functions, ETL scripts, API integration
 
 ### Architecture Diagram
-![Architecture Diagram](https://github.com/nartov-k/etl-youtube/tree/main/architechture/low-level_architecture.png)
+![Architecture Diagram](https://github.com/nartov-k/etl-youtube/tree/main/architecture/low-level_architecture.png)
  
 
 ## Features
