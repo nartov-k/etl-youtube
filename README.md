@@ -8,14 +8,32 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
 - **Goal:** Provide actionable insights on YouTube ad trends using automated data collection, ETL, and visualization.
 - **Outcome:** Supports ad strategy decisions with interactive visuals and centralized metrics.
 
-## Tools & Technologies
+## Project Objectives
 
-- **AWS S3** – Raw data storage  
-- **AWS Glue** – ETL processing  
-- **AWS Lambda** – Scheduled jobs for automation  
-- **AWS Athena** – Querying structured data  
-- **Amazon QuickSight** – Interactive dashboard creation  
-- **Python** – API integration and data processing
+1. **Data Management**: Extract raw data from csv file and YouTube API and store it in AWS S3.
+2. **ETL Automation**: Streamline data transformation using AWS Glue and Lambda.
+3. **Dashboard Development**: Design an interactive dashboard with AWS QuickSight to visualize trends and inform ad placement strategies for end users.
+
+## System Design & Technologies Used
+
+- **Data Ingestion**
+    - ***YouTube API*** - For fetching YouTube data
+    - ***AWS S3*** – Raw and processed data storage 
+- **Data Transformation** 
+    - ***AWS Lambda*** – Data transformation from JSON to Parquet  
+- **ETL Automation**
+    - ***AWS Glue*** – Automates data catalog creation and ETL processing (data joining)  
+- **Data Analysis**
+    - ***AWS Athena*** – Querying processed data
+- **Visualization** 
+    - ***Amazon QuickSight*** – Interactive dashboard for end users  
+- **General**
+    - ***AWS CLI*** - Command-line interface for managing AWS resources
+    - ***Python 3.8*** - For Lambda functions, ETL scripts, API integration
+
+### Architecture Diagram
+![Architecture Diagram](https://github.com/nartov-k/etl-youtube/tree/main/architechture/low-level_architecture.png)
+ 
 
 ## Features
 
