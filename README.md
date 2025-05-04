@@ -71,6 +71,9 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
 - Serves as a real-world demonstration of cloud-based analytics at scale
 
 ### Dashboard
+[Dashboard link (Requires Account)](https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/4e5f0d59-4fa3-430e-9c9b-9e1da61a0ea1)
+
+
 ![Dashboard 1](https://github.com/nartov-k/etl-youtube/tree/main/dashboard/frontend1.png)
 ![Dashboard 1](https://raw.githubusercontent.com/nartov-k/etl-youtube/main/dashboard/frontend1.png)
 ![Dashboard 2](https://github.com/nartov-k/etl-youtube/tree/main/dashboard/frontend2.png)
@@ -91,6 +94,6 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
 
 - [AWS Doc](https://aws.amazon.com/documentation/)
 - [YT API Doc](https://developers.google.com/youtube/v3/getting-started)
-- [Dashboard (Requires Account)](https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/4e5f0d59-4fa3-430e-9c9b-9e1da61a0ea1)
+- [Dashboard link (Requires Account)](https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/4e5f0d59-4fa3-430e-9c9b-9e1da61a0ea1)
 
 
