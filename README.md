@@ -33,6 +33,9 @@ This project is an end-to-end data pipeline and analytics dashboard that helps c
 
 ### Architecture Diagram
 ![Architecture Diagram](https://github.com/nartov-k/etl-youtube/tree/main/architecture/low-level_architecture.jpg)
+
+![Architecture Diagram](https://raw.githubusercontent.com/nartov-k/etl-youtube/main/architecture/low-level_architecture.jpg)
+
  
 
 ## Features
